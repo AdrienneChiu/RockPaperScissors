@@ -1,5 +1,7 @@
 from random import randint
 
+#This game is case-sensitive!
+
 #player choices
 m = ["Scissors", "Paper", "Rock"]
 
