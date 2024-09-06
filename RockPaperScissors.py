@@ -13,29 +13,35 @@ player = False
 
 while player == False:
 
-#set player true
+# Set player true
     player = input("Choose Rock, Paper, or Scissors \nYou entered: ")
 
+# When player enters a tie
 if player == com:
     print("Tie!")
 
+# when player plays rock
 elif player == "Rock":
     if com == "Paper":
-        print("Computer entered: Paper\nYou lost", com, "covers", player)
+        print("Computer entered: Paper\nYou lose!", com, "covers", player)
     else:
         print("You win!", player, "smashes", com)
 
+# When player plays paper
 elif player == "Paper":
     if com == "Scissors":
         print("Computer entered: Scissors\nYou lose!", com, "cut", player)
     else:
         print("You win!", player, "covers", com)
 
+# When player plays scissors
 elif player == "Scissors":
     if com == "Rock":
         print("Computer entered: Rock\nYou lose!", com, "smashes", player )
     else:
         print("You win!", player, "cut", com)
+
+# When player enters wrong choice
 else:
     print("Invalid play, try again")
 
