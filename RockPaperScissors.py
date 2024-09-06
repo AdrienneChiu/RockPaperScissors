@@ -23,7 +23,7 @@ if player == com:
 # when player plays rock
 elif player == "Rock":
     if com == "Paper":
-        print("Computer entered: Paper\nYou lost", com, "covers", player)
+        print("Computer entered: Paper\nYou lose!", com, "covers", player)
     else:
         print("You win!", player, "smashes", com)
 
